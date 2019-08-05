@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "build": "docker build -t laravel:0.0.1",
+    "build": "docker build -t laravel:0.0.1 .",
     "docker": "docker run --name laravel --rm -d -p 80:80 laravel:0.0.1",
     "stop": "docker stop laravel",
     "dev": "npm run development",
