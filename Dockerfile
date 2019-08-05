@@ -8,6 +8,7 @@ COPY . .
 RUN ./composer.phar install && ./artisan key:generate
 
 COPY default /etc/nginx/sites-enabled/default
+COPY www.conf /usr/local/etc/php-fpm.d/www.conf
 RUN rm -fr html && ln -s public html && chown -R www-data. storage resources bootstrap
 
 EXPOSE 80
