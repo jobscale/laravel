@@ -1,4 +1,4 @@
-FROM jobscale/php-fpm
+FROM ghcr.io/jobscale/php-fpm
 COPY . .
 RUN composer install \
  && ./artisan key:generate \
