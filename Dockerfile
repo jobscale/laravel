@@ -1,6 +1,6 @@
 FROM ghcr.io/jobscale/php-fpm
 COPY . .
-RUN composer install \
- && ./artisan key:generate \
- && rm -fr html && ln -sfn public html \
- && chown -R nginx. .
+RUN composer install
+RUN ./artisan key:generate
+RUN rm -fr html && ln -sfn public html
+RUN chown -R nginx. .
