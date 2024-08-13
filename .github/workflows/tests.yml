@@ -2,7 +2,7 @@ name: Tests
 
 on:
   # schedule:
-  # - cron: '39 17 * * 1'
+  # - cron: '38 17 * * 1'
   push:
     branches:
       - master
